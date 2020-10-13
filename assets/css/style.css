@@ -1,9 +1,10 @@
 * {
     /* The * is known in CSS as the 'universal selector', it is basically stating that I won't match one this, I'll match everything.
     There are default broswer settings that if we do not change the dfefault, there will be margin at the top and bottom as well as 
-    the fight and left.  This text takes care of that */
+    the fight and left.  This text takes care of that. The border box takes into account the border and the padding */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     /* more on this crazy alphanumerical value in a minute! */
@@ -41,4 +42,25 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+footer div {
+    float: right;
+    /* line-height assigns how much vertical space there should be between lines on content.  1.5 means that we want the line spacing to be 1.5 times the font size */
+    line-height: 1.5;
+    /* text-align lets us align to the left, right, center or justified */
+    text-align: right;
+}
+footer a {
+    color: #024e76;
 }
