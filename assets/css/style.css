@@ -37,12 +37,17 @@ header nav {
     margin: 7px 0;
 }
 header nav ul li {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    /* Viewport Width based on actual browser and window size.  1.55 is saying that the font size should be roughly 1.55% of the window width.*/
+    font-size: 1.55vw;
 }
 footer {
     background: #fce138;
