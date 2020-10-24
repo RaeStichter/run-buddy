@@ -145,7 +145,7 @@ section {
 
 
 
-
+/* --------------------------------------------STEPS/what we do what you do--------------------------------------- */
 /*
 .intro {
     text-align: center;
@@ -239,6 +239,7 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     font-size: 38px;
 }
 */
+/* -------------------------------------------TRAINER SECTION-------------------------------------- */
 /* Trainers in the full group, all 3 trainers, add flexbox content */
 .trainers {
     width: 100%;
@@ -284,10 +285,22 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
 .trainer-bio p {
     font-size:17px;
 }
+ /* -------------------------------------------------------GRID-----------------------------------------*/
+.service-grid-container {
+    display: grid;
+}
+
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
 
 
 
-/* Reach out Styles Start */
+/* ---------------------------------------Reach out Styles Start---------------------------------------- */
 .contact {
     background: #024e76;
 }
