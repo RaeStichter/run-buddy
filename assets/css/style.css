@@ -16,13 +16,16 @@ header {
     /* applies 20px to the top and bottom, then 35px to the left and right*/
     padding: 20px 35px;
     background-color: #39a6b2;
+    /*Added flex elements to the header */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
 }
 header a {
     /* this makes it so there is no underline for the link.  decoration is refering to the line under or a strikethrough */
@@ -30,8 +33,6 @@ header a {
     color: #fce138
 }
 header nav {
-    /* moved the nav to the right side */
-    float: right;
     /* this adds 7px to the top and bottom, but 0px to the left and right */
     margin: 7px 0;
 }
