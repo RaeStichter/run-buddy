@@ -83,21 +83,36 @@ section {
 /* . notation says that we are using a class as our CSS selector. */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     /* Adjusting the background picture size and position to have it match what the customer wants */
     background-size: cover;
     background-position: center;
-    position: relative;
+    /*Ahhed her flex box info*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Newly added for flexbox */
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+/*Newly added for flexbox */
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55 px;
+    color: #fce138;
 }
 .hero-form {
     border: solid 3px #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 .hero-form h3 {
     font-size: 24px;
