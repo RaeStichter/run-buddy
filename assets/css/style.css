@@ -49,7 +49,7 @@ header nav ul {
     list-style: none;
 }
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw; /* Viewport Width based on actual browser and window size.  1.55 is saying that the font size should be roughly 1.55% of the window*/
 }
@@ -90,6 +90,7 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 /*Newly added for flexbox */
 .hero-cta {
@@ -98,7 +99,7 @@ section {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 /*Newly added for flexbox */
 .hero-cta h2 {
@@ -164,7 +165,7 @@ section {
     background: #fce138;
 }
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid;
     /*flexbox info added*/
@@ -346,19 +347,20 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     color: #fce138;
 }
 /* Reach out style end */
-/* homepage hero 
-.hero {
-    margin: 20px;
-    background-color: white;
-    font-size: 20px;
-    color: blue;
+
+
+
+/* ------------------------------------------MEDIA QUERY SECTION (must stay at bottom)--------------------------------------------------------- */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
 }
-*/
-/*secondary page hero
-.hero-secondary {
-    margin: 20px;
-    background-color: black;
-    font-size: 20px;
-    color: red;
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */ 
+@media screen and (max-width: 768px) {
+
 }
-*/
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+}
