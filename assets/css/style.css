@@ -20,6 +20,16 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* From the Hero section to make a seamless transition */
+    background-image: url("../images/hero-bg.jpg");
+    /* Adjusting the background picture size and position to have it match what the customer wants */
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
 }
 header h1 {
     font-weight: bold;
@@ -52,6 +62,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw; /* Viewport Width based on actual browser and window size.  1.55 is saying that the font size should be roughly 1.55% of the window*/
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 footer {
     background: #fce138;
@@ -79,13 +90,14 @@ footer a {
 section {
     padding: 60px;
 }
-/* Hero Style Start */
+/* --------------------------------------------------Hero Style Start--------------------------------------------------- */
 /* . notation says that we are using a class as our CSS selector. */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     /* Adjusting the background picture size and position to have it match what the customer wants */
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
+    background-attachment: fixed;
     /*Ahhed her flex box info*/
     display: flex;
     justify-content: center;
@@ -106,14 +118,16 @@ section {
     font-style: italic;
     font-size: 55 px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .hero-form {
     border: solid 3px #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8) /*#fce138*/;
     padding: 20px;
     color: #024e76;
     width: 40%;
     margin: 3.5%;
+    border-radius: 15px;
 }
 .hero-form h3 {
     font-size: 24px;
@@ -130,6 +144,7 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 .hero-form label {
     margin: 0 5px;
@@ -140,6 +155,7 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 15px;
 }
 /* Hero Style End */
 
@@ -386,6 +402,7 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 15px;
 }
 .contact-form button {
     width: 100%;
@@ -395,6 +412,7 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 15px;
 }
 .contact-info a {
     color: #fce138;
@@ -409,6 +427,7 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
