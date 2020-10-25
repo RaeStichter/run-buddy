@@ -64,6 +64,13 @@ header nav ul li a {
     font-size: 1.55vw; /* Viewport Width based on actual browser and window size.  1.55 is saying that the font size should be roughly 1.55% of the window*/
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 footer {
     background: #fce138;
     width: 100%;
@@ -145,6 +152,12 @@ section {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    /* there is an automatic border added from the browser, this removes it */
+    outline: none;
 }
 .hero-form label {
     margin: 0 5px;
@@ -156,6 +169,9 @@ section {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 15px;
+}
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 /* Hero Style End */
 
@@ -215,6 +231,10 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.step:last-child {
+    /* this removes the bottom border from only the last child in the steps class */
+    border-bottom: none;
 }
 .step h3 {
     color: #024e76;
@@ -403,6 +423,12 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    /* there is an automatic border added from the browser, this removes it */
+    outline: none;
 }
 .contact-form button {
     width: 100%;
@@ -413,6 +439,10 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     padding: 15px 0;
     font-size: 16px;
     border-radius: 15px;
+}
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 .contact-info a {
     color: #fce138;
