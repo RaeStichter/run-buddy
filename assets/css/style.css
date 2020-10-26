@@ -349,8 +349,59 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     flex: 1;
 }
 /* Trainer specific image and bio sections */
-.trainer img {
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.trainer-img h3 {
+    position: relative;
+    z-index: 9999;
+    font-size: 28px;
+    margin-bottom: 5px;;
+    top: 200px;
+    transition: all 0.6s;
+}
+.trainer-img h4 {
+    position: relative;
+    z-index: 9999;
+    font-size: 22px;
+    top: 200px;
+    transition: all 0.6s 0.15s;
+}
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px; 
+    /*transform: translate(-200px);the trsnaform fuction below does the same thing, just smoother animations*/
+    /*transition: all 0.6s;*/
+}
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /*transition: all 0.5s;*/
+  }
+.trainer:hover .trainer-img::after {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.trainer-1 {
+    background-image: url("../images/01-05-trainers/trainer-1.jpg");
+}
+.trainer-2 {
+    background-image: url("../images/01-05-trainers/trainer-2.jpg");
+}
+.trainer-3 {
+    background-image: url("../images/01-05-trainers/trainer-3.jpg");
 }
 .trainer-bio {
     padding: 25px;
@@ -368,11 +419,13 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
 }
 .trainer-bio h3 {
     font-size: 28px;
+    display: none;
 }
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
 }
 .trainer-bio p {
     font-size:17px;
@@ -556,6 +609,12 @@ property of 1 and 12, meaning that the text is allowed to take up 12x more unuse
     .contact-info iframe {
         /* Reachout section map - want map to have its own line. */
         flex: 1 100%;
+    }
+    .trainer-img h3, .trainer-img h4, .trainer-img::after {
+        display: none;;
+    }
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
     }
 }
 
